@@ -1,4 +1,5 @@
-import { projectsData } from "@/data/projects";   
+import { projectsData } from "@/data/projects";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -8,32 +9,44 @@ export default function Projects() {
           Meus Projetos
         </h2>
         
-        {/* Grid Responsivo */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project) => (
-            <div 
+            /* 1. O card agora é um link real */
+            <a 
               key={project.id} 
-              className="bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-blue-500 transition-colors group"
+              href={project.link} // Certifique-se que o campo 'link' existe no seu @/data/projects
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block bg-slate-900 border border-slate-800 rounded-xl p-6 hover:border-blue-500 transition-all hover:-translate-y-1 group shadow-lg"
             >
-              <span className="text-sm text-blue-400 font-medium uppercase tracking-wider">
+              <span className="text-[10px] text-blue-400 font-bold uppercase tracking-[0.2em]">
                 {project.category}
               </span>
+              
               <h3 className="text-xl font-bold mt-2 group-hover:text-blue-400 transition-colors">
                 {project.title}
               </h3>
-              <p className="text-slate-400 mt-3 text-sm line-clamp-2">
+              
+              <p className="text-slate-400 mt-3 text-sm line-clamp-3 leading-relaxed">
                 {project.description}
               </p>
               
-              {/* Lista de Tecnologias (Tags) */}
-              <div className="flex flex-wrap gap-2 mt-4">
+              <div className="flex flex-wrap gap-2 mt-6">
                 {project.techStack.map((tech) => (
-                  <span key={tech} className="text-xs bg-slate-800 px-2 py-1 rounded">
+                  <span 
+                    key={tech} 
+                    className="text-[10px] font-bold bg-slate-800 text-slate-300 px-2 py-1 rounded-md border border-slate-700 group-hover:border-blue-500/30 transition-colors"
+                  >
                     {tech}
                   </span>
                 ))}
               </div>
-            </div>
+
+              {/* Detalhe de Sênior: Indicador visual de link externo */}
+              <div className="mt-6 flex items-center text-[10px] font-black uppercase tracking-widest text-blue-400 opacity-0 group-hover:opacity-100 transition-opacity">
+                Ver Projeto Ao Vivo →
+              </div>
+            </a>
           ))}
         </div>
       </div>

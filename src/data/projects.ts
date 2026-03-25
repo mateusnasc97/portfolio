@@ -5,7 +5,7 @@ interface IProject {
   description: string;
   techStack: string[];
   githubUrl?: string;
-  deployUrl: string;
+  link: string;
   image: string;
 }
 
@@ -16,16 +16,16 @@ export const projectsData: IProject[] = [
     category: "Landing Page",
     description: "Landing Page de alta conversão integrada a Dashboard de métricas em tempo real. Foco em tráfego pago.",
     techStack: ["Next.js", "Tailwind", "TypeScript", "Vercel"],
-    deployUrl: "https://lp-agencia-marketing.vercel.app/",
+    link: "https://lp-agencia-marketing.vercel.app/",
     image: "/projects/portfolio.png"
   },
   {
     id: 2,
     title: "Lumina – SaaS de Agendamento Premium",
-    category: "Landing Page",
+    category: "Sistema",
     description: "Sistema de gestão de horários com calendário inteligente, seleção de serviços e fluxo de confirmação Apple Style.",
     techStack: ["Next.js", "Tailwind", "TypeScript", "Framer Motion"],
-    deployUrl: "https://lumina-estetica-lake.vercel.app/", 
+    link: "https://lumina-estetica-lake.vercel.app/", 
     image: "/projects/lp-vendas.png"
   }
 ];
