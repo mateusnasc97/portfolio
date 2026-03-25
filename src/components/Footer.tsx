@@ -1,5 +1,5 @@
 export default function Footer() {
-    const year = new Date().getFullYear(); // Mais direto
+    const year = new Date().getFullYear();
     
     return (
         <footer className="border-t border-white/5 bg-slate-950 py-12">

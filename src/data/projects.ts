@@ -12,29 +12,20 @@ interface IProject {
 export const projectsData: IProject[] = [
   {
     id: 1,
-    title: "Portfolio Pessoal Pro",
+    title: "Focus. – Ecossistema de Performance",
     category: "Landing Page",
-    description: "Minha vitrine de alta performance construída com Next.js 14 e Tailwind.",
+    description: "Landing Page de alta conversão integrada a Dashboard de métricas em tempo real. Foco em tráfego pago.",
     techStack: ["Next.js", "Tailwind", "TypeScript", "Vercel"],
-    deployUrl: "https://seu-portfolio.vercel.app",
+    deployUrl: "https://lp-agencia-marketing.vercel.app/",
     image: "/projects/portfolio.png"
   },
   {
     id: 2,
-    title: "Landing Page Infoproduto",
+    title: "Lumina – SaaS de Agendamento Premium",
     category: "Landing Page",
-    description: "Página de vendas com foco em conversão e carregamento instantâneo.",
-    techStack: ["React", "Tailwind", "Framer Motion"],
-    deployUrl: "#", 
+    description: "Sistema de gestão de horários com calendário inteligente, seleção de serviços e fluxo de confirmação Apple Style.",
+    techStack: ["Next.js", "Tailwind", "TypeScript", "Framer Motion"],
+    deployUrl: "https://lumina-estetica-lake.vercel.app/", 
     image: "/projects/lp-vendas.png"
-  },
-  {
-    id: 3,
-    title: "Dashboard de Gestão Financeira",
-    category: "Sistema",
-    description: "Interface administrativa com gráficos interativos e controle de fluxo de caixa em tempo real.",
-    techStack: ["Next.js", "Recharts", "Prisma", "PostgreSQL"],
-    deployUrl: "#", 
-    image: "/projects/dashboard.png"
   }
 ];
