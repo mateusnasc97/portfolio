@@ -7,9 +7,9 @@ export default function Navbar() {
         </span>
         <div className="flex gap-6 text-sm font-medium text-slate-400">
           <a href="#projects" className="hover:text-white transition-colors">Projetos</a>
-          <a href="#contact" className="hover:text-white transition-colors">Contato</a>
+          <a href="https://wa.me/5562981619496" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Contato</a>
         </div>
       </div>
     </nav>
   )
-}
+} 

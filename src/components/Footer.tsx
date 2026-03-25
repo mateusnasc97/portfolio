@@ -9,9 +9,9 @@ export default function Footer() {
                 </span>
                 
                 <div className="flex gap-6">
-                    <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">GitHub</a>
-                    <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">LinkedIn</a>
-                    <a href="#" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">WhatsApp</a>
+                    <a href="https://github.com/mateusnasc97?tab=repositories" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">GitHub</a>
+                    <a href="https://www.linkedin.com/in/mateus-nascimento-08a81b21a" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">LinkedIn</a>
+                    <a href="https://wa.me/5562981619496" className="text-slate-400 hover:text-blue-400 transition-colors text-sm">WhatsApp</a>
                 </div>
             </div>
         </footer>
